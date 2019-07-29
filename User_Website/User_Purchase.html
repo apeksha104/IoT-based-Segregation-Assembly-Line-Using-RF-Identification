@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+      <meta charset="UTF-8">
+      <title>Buy Now</title>    
+      <link rel="stylesheet" href="./css/style.css" type="text/css">
+      <!--Include Firebase and JQuerry source scripts -->
+      <script src="https://www.gstatic.com/firebasejs/5.8.0/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/5.8.0/firebase-auth.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/5.8.0/firebase-database.js"></script>
+      <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/5.8.0/firebase.js"></script>
+      <script>
+
+        //Configure Firebase
+          var config = {
+            apiKey: "AIzaSyAgwPbRH8rS2FzwvIjs6zH5L66MpgdsUDA",
+            authDomain: "nodemcu-836f0.firebaseapp.com",
+            databaseURL: "https://nodemcu-836f0.firebaseio.com",
+            projectId: "nodemcu-836f0",
+            storageBucket: "nodemcu-836f0.appspot.com",
+            messagingSenderId: "611269904625"
+          };
+          firebase.initializeApp(config);
+
+        </script>
+  </head>
+
+  <body id="user_purchase">
+       <div class="container">
+	     <header class="header">
+             <br><br>
+             &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a class="link-title" href="index.html">Harvard & Co.</a>
+		 </header>
+          <nav class="menu"><br>
+             &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a href="index.html">Home</a> &nbsp; &nbsp; &nbsp;
+              <a href="about.html">About Us</a> &nbsp; &nbsp; &nbsp;
+              <a href="contact.html">Contact</a> &nbsp; &nbsp; &nbsp;          
+             
+                
+          </nav>
+          
+              <article class="main">
+              <h1 class="page-heading" style="">BUY THIS PRODUCT</h1>
+           
+
+        <form id="form1">
+
+          <!-- Create form to accept 'Name', 'Address' and 'Delivery Type' -->
+          Name:<br>
+          <input type="text" name="CustName" id="custname" placeholder="Your Name">
+          <br><br>
+
+          Address:<br>
+          <input type="textarea" name="Add" id = "address" rows="10" cols="20" placeholder="Your Address">
+          <br><br>
+
+
+          <p>Select Delivery Type</p>
+    		  <select name="Delivery Type" class="delivery">
+          <option
+          value="Normal Delivery" >Normal Delivery</option>
+  	      <option
+  	      value="Express Delivery">Express Delivery</option>
+    		  </select>
+        </form>
+           <
+
+        <!--  Create Submit Button and invoke "call()" as action  -->
+        <br><br><button onclick="call()" id="btn"> Submit </button>
+              
+                      
+             
+                      
+          
+                          
+                                          
+          </article>
+          <footer>
+              &copy; 2030 Website &nbsp; Design by Apeksha Kulkarni
+          
+          
+          </footer>
+            
+          
+       
+          
+       
+
+        <script>
+
+            // Initialize Counter to index through Database
+            var i=1;
+
+            function call(){
+                // Get entered values and store them in variables
+                var name = document.getElementById("custname").value;
+                var address = document.getElementById("address").value;
+                //var deltype = document.getElementById("delivery").value;
+                var deltype = $('.delivery option:selected').text();
+
+                // Display variables on Console
+                console.log(name);
+                console.log(address);
+                console.log(deltype);
+
+                // Create an instance of Firebase
+                var database = firebase.database();
+
+                // Store NoSQL path in 'path' variable and concatenate Counter
+                var path = '/Customer ' + i;
+
+                // "Set" values to 'path' as a JSON Object
+                firebase.database().ref(path).set({
+                  Name: $('#custname').val(),
+                  Address: $('#address').val(),
+                  'Delivery Type': $('.delivery option:selected').val()
+                });
+
+                // Increment Counter
+                i++;
+              }
+
+          </script>
+       </div>
+
+    </body>
+
+</html>

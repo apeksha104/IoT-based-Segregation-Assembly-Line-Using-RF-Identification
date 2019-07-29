@@ -1,0 +1,263 @@
+@charset "UTF-8";
+body {
+     
+    background-color: #F4F4F4;
+    margin:0;
+    
+}
+.container{
+      
+    width: 1500px;
+    height: auto;
+    margin:0 auto;
+    background: #FFF;
+    
+}
+.header{
+    height: 80px;
+    top: 50px;
+    bottom: 0;
+    left:40px;
+    right:50px;
+    
+   
+}
+.header a{
+    text-decoration: none;
+    font-family: "BANKGOTHIC LT BT";
+    font-size: -webkit-xxx-large;
+    font-weight: bolder;
+    
+}
+
+.menu {
+    background: #38060f;
+    top: 6px;
+    bottom: 0;
+    left: 6px;
+    right: 40px;
+    height: 40px;
+    margin-top: 23px;
+}
+.menu a {
+    
+    color: #fbfbfb;
+    text-decoration: none;
+    font-size: 19px;
+    font-family: "ARIAL NARROW";
+}
+.menu a:hover{
+    color: #cabdbd ;
+}
+
+aside {
+    float: left;
+    width: 120px;
+    padding: 30px 0 0 40px;
+}
+h1{
+    margin:0px;
+    color: #869843;
+    font-size: 24px;
+    font-family: "Arial Narrow";
+    font-weight: normal;
+    
+}
+
+h2 {
+    color: #000000;
+    font-size: 15px;
+    margin-left:159px;
+}
+.button {
+  background-color: #38060f;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  margin-left: 480px;
+  border-radius: 8px;
+}
+.main {
+    background-image: url('../../../../../Users/Apeksha/Desktop/BE_Website/Images/photo-1458682625221-3a45f8a844c7.jpg');
+  
+    margin: 0 0 0 180px;
+    padding: 35px 40px 30px 0;
+    
+    opacity: 0.9;
+    font-family: "Georgia";
+    font-size: 13px;
+    line-height: 18px;
+    text-emphasis: justify;
+    margin-left: 0px;
+    filter: alpha(opacity=20);
+}
+.main a:hover {
+    color: #444444;
+}
+#home-image {
+    width:70%;
+        margin-left: 159px;
+}
+footer {
+    padding: 6px 40px 6px 40px;
+    background: #c7c6c6;
+    font-family: "Calibri";
+    color: #444444;
+    font-size: 12px;
+    text-decoration: right;
+}
+footer a{
+    text-decoration: none;
+    color: #262626;
+    
+}
+.link-title {
+    text-decoration: none;
+    font-size: 24px;
+    color: #444;
+}
+
+.page-heading {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 900;
+    color: black;
+}
+
+
+.seperator {
+    color: #FFFFFF;
+    font-size: 12px;
+}
+
+/*About Page Styles */
+#about-page #home-image img{
+    width: 70%;
+    float: left;
+    margin-bottom:10px;
+    margin-left: 131px;
+        
+    
+}
+#about-page #info{
+    float: right;
+    width: 200px;
+}
+
+#about-page .description {
+    clear: both;
+    margin-left: 159px;
+  }
+
+/* Contact Page */
+#contact #form {
+    
+    width: 600;
+    width: 550px;
+    padding: 10px 10px 10px 10px;
+    margin: 0 auto;
+    box-shadow: 0 9px 13px 2px;
+    border-radius: 5px;
+    background: #cabdbd;
+}
+#contact #form input {
+    width: 100%;
+    border-radius: 5px;
+    height: 25px;
+    background: #D6D6D6;
+    
+}
+#contact #form #Msg {
+    width: 100%;
+    border-radius: 5px;
+    background: #D6D6D6;
+}
+#contact #form #submit{
+    height: 30px;
+    background: #38060f;
+    color: white;
+}
+
+#user_purchase #form1 {
+    
+    width: 600;
+    width: 550px;
+    padding: 10px 10px 10px 10px;
+    margin: 0 auto;
+    box-shadow: 0 9px 13px 2px;
+    border-radius: 5px;
+    background: #cabdbd;
+}
+#user_purchase #form1 input {
+    width: 100%;
+    border-radius: 5px;
+    height: 25px;
+    background: #D6D6D6;
+    
+}
+#user_purchase #form1 .delivery {
+    width: 100%;
+    border-radius: 5px;
+    background: #D6D6D6;
+}
+#user_purchase #btn{
+   background-color: #38060f;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  margin-left: 673px;
+  border-radius: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
